@@ -8,8 +8,8 @@ from simulation import simulate_strategy_time_based, generate_small_projects, ge
 st.title("R&D Investment Simulator")
 
 st.sidebar.header("Simulation Parameters")
-num_small_projects = st.sidebar.slider("Number of Small Projects", 10, 100, 50)
-num_large_projects = st.sidebar.slider("Number of Large Projects", 5, 50, 20)
+num_small_projects = st.sidebar.slider("Number of Small Projects", 10, 2000, 50)
+num_large_projects = st.sidebar.slider("Number of Large Projects", 5, 2000, 20)
 annual_budget_distribution = [
     st.sidebar.slider("Annual Budget for Cost C1", 100, 1000, 500),
     st.sidebar.slider("Annual Budget for Cost C2", 50, 500, 300),

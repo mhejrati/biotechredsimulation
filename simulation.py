@@ -60,10 +60,10 @@ def generate_small_projects(num_projects=1000, max_time=120):
 def generate_large_projects(num_projects=200, max_time=120):
     projects = []
     for i in range(num_projects):
-        cost = [np.random.randint(150, 300), np.random.randint(100, 200), np.random.randint(50, 100)]
+        cost = [np.random.randint(20, 100), np.random.randint(10, 50), np.random.randint(2, 20)]
         total_cost = sum(cost)
         arrival_time = np.random.randint(1, max_time)
-        duration = np.random.randint(36, 60)  # 3 to 5 years
+        duration = np.random.randint(12, 48)  # 3 to 5 years
         expected_reward = np.random.uniform(total_cost, 1.5 * total_cost)
         reward_function = lambda expected_reward=expected_reward: np.random.normal(expected_reward, expected_reward * 0.1)
 
